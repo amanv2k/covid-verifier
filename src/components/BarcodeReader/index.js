@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import BarcodeScannerComponent from "react-qr-barcode-scanner";
 
-function BarcodeReader() {
+export const BarcodeReader=()=> {
   const [data, setData] = React.useState([]);
 
   const update = React.useCallback((err, result) => {
@@ -24,4 +24,4 @@ function BarcodeReader() {
   );
 }
 
-export default BarcodeReader;
+// export default BarcodeReader;
